@@ -2,7 +2,7 @@
 
 The following assumes you've already acquired [devtools](https://devtools.r-lib.org/).
 
-`devtools::install_github('zzz','rebeccagj')`
+`devtools::install_github('rebeccagj/zzz')`
 
 # FAQ
 
