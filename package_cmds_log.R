@@ -24,4 +24,5 @@ document()
 setwd('..')
 install("zzz/")
 
-#
+# from github
+devtools::install_github('rebeccagj/zzz')
