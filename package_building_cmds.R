@@ -20,5 +20,8 @@ document()
 
 # Install ####
 
+# from within cloned directory
 setwd('..')
 install("zzz/")
+
+#

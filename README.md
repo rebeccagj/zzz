@@ -1,5 +1,12 @@
+# Installing
 
-Making a package for commonly used functions
+The following assumes you've already acquired [devtools](https://devtools.r-lib.org/).
+
+`devtools::install_github('zzz','rebeccagj')`
+
+# FAQ
+
+Rebecca is simply making a package for commonly used functions
 
 Resources:
 - https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
