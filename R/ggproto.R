@@ -15,7 +15,7 @@
 #' ggproto Classes for Plotting Species Sensitivity Data and Distributions
 #'
 #' @seealso [`ggplot2::ggproto()`]
-#' @name zzzs-ggproto
+#' @name zzz-ggproto
 NULL
 
 #' @rdname zzz-ggproto
