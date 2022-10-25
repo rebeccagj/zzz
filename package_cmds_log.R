@@ -16,13 +16,13 @@ wd = "/krummellab/data1/rebeccagj/repos/"
 
 wd = "/krummellab/data1/rebeccagj/repos/zzz/"
 setwd(wd)
-document()
+devtools::document()
 
 # Install ####
 
 # from within cloned directory
 setwd('..')
-install("zzz/")
+roxygen2::install("zzz/")
 
 # from github
 devtools::install_github('rebeccagj/zzz')
