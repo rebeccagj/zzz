@@ -22,7 +22,7 @@ devtools::document()
 
 # from within cloned directory
 setwd('..')
-roxygen2::install("zzz/")
+install("zzz/")
 
 # from github
 devtools::install_github('rebeccagj/zzz')
