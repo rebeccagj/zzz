@@ -6,8 +6,7 @@
 #' @keywords geom split violin
 #' @export
 #' @examples
-#' print_message("Starting Clustering")
-#' print_message(c("Current WD:", getwd()))
+#' ggplot(mtcars, aes(factor(cyl), mpg)) + geom_split_violin()
 
 geom_split_violin <- function(
   mapping = NULL,
