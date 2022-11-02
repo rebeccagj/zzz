@@ -1,6 +1,6 @@
 Package: zzz
 Title: Rebecca's personal package with custom functions
-Version: 0.0.0.9000
+Version: 0.0.0.91
 Authors@R: person("Rebecca", "Jaszczak", role = c("aut", "cre"), email = "rebecca.jaszczak@ucsf.edu")
 Description: What it says on the tin; personal functions used often in my life as a data scientist. marginally focused on biology/single cell RNA sequencing analysis/cytof analysis.
 License: `use_gpl3_license()`
