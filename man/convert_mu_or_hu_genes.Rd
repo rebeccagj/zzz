@@ -4,20 +4,27 @@
 \alias{convert_mu_or_hu_genes}
 \title{Convert between mouse or human genes}
 \usage{
-convert_mu_or_hu_genes(genelist, unique = FALSE)
+convert_mu_or_hu_genes(
+  genelist,
+  unique = FALSE,
+  host = "https://dec2021.archive.ensembl.org"
+)
 }
 \arguments{
 \item{genelist}{A character vector of mouse: c(Gene1, Gene1) or human: c(GENE1, GENE2) genes; the function will determine whether you currently have mouse or human genes based on case.}
 
-\item{unique}{A true/false Boolean for whether you get unique genes for a 1:1 conversion}
+\item{unique}{an "in R" calculation of unique values in the converted data frame; different than biomaRt's server-side \code{uniqueRows} calculation, which is \code{FALSE} in this function}
+
+\item{host}{Host to connect to. Defaults to \verb{https://dec2021.archive.ensembl.org}, but will take any \code{url} from \code{listEnsemblArchives()} or \verb{https://www.ensembl.org}}
 }
 \description{
 A function which uses BioMart and takes a list of human or mouse genes and returns a dataframe with inital query and the other species' homologs
 }
 \examples{
-convert_mu_or_hu_genes("DPPA3", unique = FALSE)
+convert_mu_or_hu_genes("DPPA3", host = 'www.ensembl.org')
+convert_mu_or_hu_genes("DPPA3", unique = TRUE)
 convert_mu_or_hu_genes("DPPA3")
-convert_mu_or_hu_genes("Dppa3", unique = FALSE)
+convert_mu_or_hu_genes("Dppa3", unique = TRUE)
 convert_mu_or_hu_genes("Dppa3")
 }
 \keyword{convert}

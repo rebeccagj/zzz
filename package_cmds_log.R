@@ -5,7 +5,7 @@ library(devtools)
 #devtools::install_github("klutometis/roxygen")
 library(roxygen2)
 
-wd = "/krummellab/data1/rebeccagj/repos/"
+wd = "./"
 
 #setwd(wd)
 #create('zzz')
@@ -14,7 +14,7 @@ wd = "/krummellab/data1/rebeccagj/repos/"
 
 # Build Documentation after updates / as necessary ####
 
-wd = "/krummellab/data1/rebeccagj/repos/zzz/"
+wd = "./../zzz/"
 setwd(wd)
 devtools::document()
 

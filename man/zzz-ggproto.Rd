@@ -4,7 +4,7 @@
 \name{zzz-ggproto}
 \alias{zzz-ggproto}
 \alias{GeomSplitViolin}
-\title{ggproto Classes for Plotting Species Sensitivity Data and Distributions}
+\title{ggproto Classes for zzz}
 \format{
 An object of class \code{GeomSplitViolin} (inherits from \code{GeomViolin}, \code{Geom}, \code{ggproto}, \code{gg}) of length 2.
 }
@@ -12,7 +12,7 @@ An object of class \code{GeomSplitViolin} (inherits from \code{GeomViolin}, \cod
 GeomSplitViolin
 }
 \description{
-ggproto Classes for Plotting Species Sensitivity Data and Distributions
+ggproto Classes for zzz
 }
 \seealso{
 \code{\link[ggplot2:ggproto]{ggplot2::ggproto()}}

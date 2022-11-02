@@ -75,8 +75,7 @@ the default plot specification, e.g. \code{\link[ggplot2:borders]{borders()}}.}
 Thanks to jan-glx on stackoverflow: https://stackoverflow.com/a/45614547 for this function. Can pipe to a ggplot with \code{+}
 }
 \examples{
-print_message("Starting Clustering")
-print_message(c("Current WD:", getwd()))
+ggplot(mtcars, aes(factor(cyl), mpg)) + geom_split_violin()
 }
 \keyword{geom}
 \keyword{split}
