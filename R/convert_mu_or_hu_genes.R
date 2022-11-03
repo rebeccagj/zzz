@@ -33,18 +33,22 @@ convert_mu_or_hu_genes = function (genelist, unique = FALSE, host = "https://dec
 
   #loads in biomarts if they haven't been loaded already
   if (!exists("human_mart")) {
-    require("biomaRt")
-    print(paste0("host is: ",host," - loading now"))
-    human_mart = useEnsembl(
-      "ensembl",
-      dataset = "hsapiens_gene_ensembl",
-      host = "https://dec2021.archive.ensembl.org")
-    assign(x = "human_mart", value = human_mart, .GlobalEnv)
-    if (!exists("mouse_mart")) {
-      mouse_mart = useEnsembl("ensembl",
-                           dataset = "mmusculus_gene_ensembl",
-                           host = "https://dec2021.archive.ensembl.org")
-      assign(x = "mouse_mart", value = mouse_mart, .GlobalEnv)
+    if ( isTRUE(grepl(host, human_mart@host)) ) {
+      print("marts already exist in .GlobalEnv, starting conversion")
+    } else {
+      require("biomaRt")
+      print(paste0("host is: ",host," - loading now"))
+      human_mart = useEnsembl(
+        "ensembl",
+        dataset = "hsapiens_gene_ensembl",
+        host = host)
+      assign(x = "human_mart", value = human_mart, .GlobalEnv)
+      if (!exists("mouse_mart")) {
+        mouse_mart = useEnsembl("ensembl",
+                                dataset = "mmusculus_gene_ensembl",
+                                host = host)
+        assign(x = "mouse_mart", value = mouse_mart, .GlobalEnv)
+      }
     }
   }
   else {
