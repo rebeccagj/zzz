@@ -2,6 +2,7 @@
 #'
 #' A function which uses BioMart and takes a list of human or mouse genes and returns a dataframe with inital query and the other species' homologs
 #'
+#' @import biomaRt
 #' @param genelist A character vector of mouse: c(Gene1, Gene1) or human: c(GENE1, GENE2) genes; the function will determine whether you currently have mouse or human genes based on case.
 #' @param unique an "in R" calculation of unique values in the converted data frame; different than biomaRt's server-side `uniqueRows` calculation, which is `FALSE` in this function
 #' @param host Host to connect to. Defaults to `https://dec2021.archive.ensembl.org`, but will take any `url` from `listEnsemblArchives()` or `https://www.ensembl.org`
