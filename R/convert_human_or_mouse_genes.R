@@ -9,14 +9,16 @@
 #' @keywords genes convert
 #' @export
 #' @examples
-#' convert_mu_or_hu_genes("DPPA3", host = 'www.ensembl.org')
-#' convert_mu_or_hu_genes("DPPA3", unique = TRUE)
-#' convert_mu_or_hu_genes("DPPA3")
-#' convert_mu_or_hu_genes("Dppa3", unique = TRUE)
-#' convert_mu_or_hu_genes("Dppa3")
+#' convert_human_or_mouse_genes("DPPA3", host = 'www.ensembl.org')
+#' convert_human_or_mouse_genes("DPPA3", unique = TRUE)
+#' convert_human_or_mouse_genes("DPPA3")
+#' convert_human_or_mouse_genes("Dppa3", unique = TRUE)
+#' convert_human_or_mouse_genes("Dppa3")
 
 
-convert_mu_or_hu_genes = function (genelist, unique = FALSE, host = "https://dec2021.archive.ensembl.org") {
+convert_human_or_mouse_genes = function (genelist, unique = FALSE, host = "https://dec2021.archive.ensembl.org") {
+  if ( !is.null(genelist) ) stop("Pass a mouse or human gene or vector of genes to convert.")
+
   #tests if the characters in the vector are in all caps
   tf = all(grepl("^[[:upper:]]+$", gsub("[[:digit:]]+", "",
                                         genelist)))
