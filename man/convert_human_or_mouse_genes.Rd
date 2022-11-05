@@ -21,7 +21,7 @@ convert_human_or_mouse_genes(
 A function which uses BioMart and takes a list of human or mouse genes and returns a dataframe with inital query and the other species' homologs
 }
 \examples{
-convert_human_or_mouse_genes("DPPA3", host = 'www.ensembl.org')
+convert_human_or_mouse_genes("DPPA3", host = 'https://www.ensembl.org')
 convert_human_or_mouse_genes("DPPA3", unique = TRUE)
 convert_human_or_mouse_genes("DPPA3")
 convert_human_or_mouse_genes("Dppa3", unique = TRUE)
