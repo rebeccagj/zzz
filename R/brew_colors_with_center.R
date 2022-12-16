@@ -13,10 +13,10 @@
 #' @param high_col specification of the color to represent the high range, defaults to `magenta`
 #' @export
 #' @examples
-#' transition_color_value(df)
-#' transition_color_value(df, break_val = 0, low_col = "blue", mid_col = "yellow", high_col = "red")
+#' brew_colors_with_center(df)
+#' brew_colors_with_center(df, break_val = 0, low_col = "blue", mid_col = "yellow", high_col = "red")
 
-transition_color_value = function(df, break_val = 0, by_val = 0.01, min_val = NULL, max_val = NULL, low_col = 'forestgreen', mid_col = 'black', high_col = 'magenta'){
+brew_colors_with_center = function(df, break_val = 0, by_val = 0.01, min_val = NULL, max_val = NULL, low_col = 'forestgreen', mid_col = 'black', high_col = 'magenta'){
   if (is.null(min_val)) {
     print('min val is null, setting min to min(df)')
     min_val = min(df)
