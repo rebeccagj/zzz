@@ -12,7 +12,7 @@ wd = "./"
 
 # mv package_init.R to zzz
 
-# Build Documentation after updates / as necessary ####
+# Build Documentation after updates / writing a new function ####
 
 wd = "./../zzz/"
 setwd(wd)
