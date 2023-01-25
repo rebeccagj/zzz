@@ -16,14 +16,14 @@
 #' brew_breakpoint_palette(df)
 #' brew_breakpoint_palette(df, break_val = 0, low_col = "blue", mid_col = "yellow", high_col = "red")
 
-brew_breakpoint_palette = function(df, break_val = 0, by_val = 0.01, min_val = NULL, max_val = NULL, low_col = NULL, mid_col = NULL, high_col = NULL){
+brew_breakpoint_palette = function(df, break_val = 0, by_val = 0.01, common_col = NULL, min_val = NULL, max_val = NULL, low_col = NULL, mid_col = NULL, high_col = NULL){
   if (is.null(min_val)) {
-    print('min val is null, setting min to min(df)')
     min_val = min(df)
+    print(paste('min val is null, setting min to min(df):',min_val))
   }
   if (is.null(max_val)) {
-    print('max val is null, setting max to max(df)')
     max_val = max(df)
+    print(paste('max val is null, setting min to max(df):',max_val))
   }
   if (is.null(low_col)) {
     low_col = 'forestgreen'

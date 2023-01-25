@@ -8,6 +8,7 @@ brew_breakpoint_palette(
   df,
   break_val = 0,
   by_val = 0.01,
+  common_col = NULL,
   min_val = NULL,
   max_val = NULL,
   low_col = NULL,
