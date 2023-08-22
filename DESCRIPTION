@@ -6,7 +6,8 @@ Description: What it says on the tin; personal functions used often in my life a
 biocViews: 
 Imports: 
     biomaRt,
-    ggplot2
+    ggplot2,
+    RColorBrewer
 License: `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
